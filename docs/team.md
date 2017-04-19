@@ -7,10 +7,10 @@ title:  Team
 
 
 ## USER 1
-***UCI Net ID***: ucinetid
+***UCI Net ID***: bagherpo@uci.edu
 
-## USER 2
-***UCI Net ID***: ucinetid
+## Isaac Samuel Singer
+***UCI Net ID***: isinger@uci.edu
 
-## USER 3
-***UCI Net ID***: ucinetid
+## Cory Sherman
+***UCI Net ID***: corygs@uci.edu
