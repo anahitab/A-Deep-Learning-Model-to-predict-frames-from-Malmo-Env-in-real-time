@@ -3,10 +3,10 @@ layout: default
 title:  Team
 ---
 
-# {{ page.title }}
+# {{ Team for Project 175 }}
 
 
-## USER 1
+## Anahita Bagherpo
 ***UCI Net ID***: bagherpo@uci.edu
 
 ## Isaac Samuel Singer
