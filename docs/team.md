@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  Team
+title:  Team for Project 175
 ---
 
 # {{ page.title }}
