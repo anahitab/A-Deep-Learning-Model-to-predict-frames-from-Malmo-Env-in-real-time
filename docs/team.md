@@ -6,7 +6,7 @@ title:  Team for Project 175
 # {{ page.title }}
 
 
-## Anahita Bagherpo
+## Anahita bagherpour
 ***UCI Net ID***: bagherpo@uci.edu
 
 ## Isaac Samuel Singer
