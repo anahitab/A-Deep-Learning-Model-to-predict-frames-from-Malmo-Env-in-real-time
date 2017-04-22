@@ -13,7 +13,7 @@ Other examples of uses of our project could be for detecting what kind of enviro
 
 ## AI/ML Algorithms Used
 
-The AI/ML algorithms that we are planning on using are deep learning models applied with classification task and dynamic programming. 
+The AI/ML algorithms that we are planning on using are deep learning models applied with classification task and reinforcement learning. 
 
 ## Evaluation Plan
 
