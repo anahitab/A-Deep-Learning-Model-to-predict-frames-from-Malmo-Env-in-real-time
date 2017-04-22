@@ -30,3 +30,5 @@ We could add elevation, structures (villages, etc).
 We will evaluate our project qualitatively with some very obvious images.
 For example, we can take a picture of pure snow, and confirm our project predicts a snowy biome.
 It could also be interesting to run our project in reverse, to generate exaggerated biomes, similar to DeepDream.
+
+Appointment Time: Tuesday, April 25, 2017
