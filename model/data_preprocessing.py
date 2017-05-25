@@ -48,8 +48,8 @@ def image_labels(im_id,im_label):
             final_label.append(im_label[idx])
             rt = misc.imread(fil)
             final_images.append(rt)
-        if cvg==1000:
-            break
+        #if cvg==1000:
+            #break
     print("length of id is",len(final_images))
     print("length of id is",len(final_images))
     return final_images , final_label
