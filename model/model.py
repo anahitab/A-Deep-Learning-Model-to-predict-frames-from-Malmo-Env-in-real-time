@@ -56,7 +56,7 @@ class base_Model:
             self.step = 0
             tep = 0
             d_iter = data_iterator(self.final_images , self.fin_lab)
-            while tep<50:
+            while tep<622:
                 tep+=1
                 self.step+=1
                 x_batch , y_batch = d_iter.next_batch(self.train_batch_size)
