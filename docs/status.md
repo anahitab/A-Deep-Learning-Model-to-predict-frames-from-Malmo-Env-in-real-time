@@ -16,9 +16,9 @@ In order to generate all of the images for testing, we implemented basic data ge
 
 The tools used in generating these images are the following: 
 
- **[MCEdit Unified](https://github.com/Khroki/MCEdit-Unified): To help generate the map and extract biome information
- **[Minecraft 1.8 server jar](https://s3.amazonaws.com/Minecraft.Download/versions/1.8/minecraft_server.1.8.jar): This jar is added to MCEdit to help generate the maps
- **[Malmo](https://github.com/Microsoft/malmo): Used to generate the screenshots
+* [MCEdit Unified](https://github.com/Khroki/MCEdit-Unified): To help generate the map and extract biome information
+* [Minecraft 1.8 server jar](https://s3.amazonaws.com/Minecraft.Download/versions/1.8/minecraft_server.1.8.jar): This jar is added to MCEdit to help generate the maps
+* [Malmo](https://github.com/Microsoft/malmo): Used to generate the screenshots
 
 ### Process
 There are 3 steps to how we generated the data: 
