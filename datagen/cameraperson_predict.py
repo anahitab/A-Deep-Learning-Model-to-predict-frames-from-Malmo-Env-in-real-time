@@ -308,10 +308,7 @@ while world_state.is_mission_running:
     frameTfInput = frame.pixels
 
     # prediction is an ID, 0-22
-    prediction = 0
-
-    # TODO @anahita make prediction for this image
-    # prediction = predict(frameTfInput)
+    prediction = predict(frameTfInput)
 
     # uses the mapping from new labels to old labels
     biomeId = getBiomeIdFromPrediction(prediction)
