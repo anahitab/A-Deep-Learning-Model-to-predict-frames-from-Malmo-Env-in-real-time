@@ -26,10 +26,13 @@ There are 3 steps to how we generated the data:
 1. **Generate the map.** To pregenerate a map, we create a new world in MCEdit. We use the seed "1".
 2. **Extract biome information.** We use a custom MCEdit filter `savebiomes.py`. Select all the chunks and run the filter.
 3. **Capture screenshots.** We use a Malmo, to load the pregenerated map and capture screenshots from various positions, directions, and conditions. Run the Malmo agent `cameraperson.py`. Make sure you update the map path first.
- 
- 
+
+### Testing 
 
 ## Evaluation
 
 ## Remaining Goals and Challenges
 
+One of our remaining goals for the project is to generate more images for testing. Since we have only done one round of data generation for one world seed in Minecraft, creating images within different worlds can help train our program to better predict biomes. 
+
+One challenge that we face is generating images that contain structures and less common biomes. Because the world and photos are randomly generated, it may prove to be difficult to find any sort of structures throughout the map because those places have a very low spawn/appearance rate on any map. 

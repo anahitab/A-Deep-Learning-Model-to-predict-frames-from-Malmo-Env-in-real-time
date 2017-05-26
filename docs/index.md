@@ -3,32 +3,51 @@ layout: default
 title:  Home
 ---
 
-_Add your text here_
+## What is _Insert Title Here_ ?
 
+??? is 
 
-What's Markdown (`.md`)?
-
-Markdown is markup that lets you write hypertext (HTML) documents
-in easy-to-read and easy-to-write plain text.
-No angle brackets `<></>` required for
-paragraphs, lists, blockquotes, tables, etc.
-
-
-This is a paragraph (in Markdown). Some more
-text here.
-
-This is another paragraph.
-
-This is a list:
-
-- Orange
-- Apple
-- Blueberry
+--
 
 
 
-Just getting started with Markdown?
-See the [HTML <-> Markdown Quick Reference (Cheat Sheet)][quickref].
+### Source Code can be found [Here](https://github.com/anahitab/PROJECT)
 
 
-[quickref]: https://github.com/mundimark/quickrefs/blob/master/HTML.md
+
+### A couple of sources that helped us for this project: 
+
+- https://github.com/dennybritz/reinforcement-learning
+- MCEdit: https://github.com/Khroki/MCEdit-Unified
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
