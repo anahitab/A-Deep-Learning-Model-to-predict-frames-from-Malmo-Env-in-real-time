@@ -18,8 +18,8 @@ Our project is a program that learns to better predict biomes based off an image
 ### A couple of sources that helped us for this project: 
 
 - <https://github.com/dennybritz/reinforcement-learning>
-- MCEdit: <https://github.com/Khroki/MCEdit-Unified>
-- Malmo: <https://github.com/Microsoft/malmo>
+- **MCEdit:** <https://github.com/Khroki/MCEdit-Unified>
+- **Malmo:** <https://github.com/Microsoft/malmo>
 - 
 
 
