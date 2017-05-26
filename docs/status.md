@@ -35,4 +35,5 @@ There are 3 steps to how we generated the data:
 
 One of our remaining goals for the project is to generate more images for testing. Since we have only done one round of data generation for one world seed in Minecraft, creating images within different worlds can help train our program to better predict biomes. 
 
-One challenge that we face is generating images that contain structures and less common biomes. Because the world and photos are randomly generated, it may prove to be difficult to find any sort of structures throughout the map because those places have a very low spawn/appearance rate on any map. 
+One challenge that we face is generating images that contain structures and less common biomes. Because the world and photos are randomly generated, it may prove to be difficult to find any sort of structures throughout the map because those places have a very low spawn/appearance rate on any map. In order to find as many of these rare biomes and structures as we can, we'll need to generate more data sets using different random worlds with the help of our [data generation scripts](https://github.com/anahitab/PROJECT/tree/master/datagen).
+
