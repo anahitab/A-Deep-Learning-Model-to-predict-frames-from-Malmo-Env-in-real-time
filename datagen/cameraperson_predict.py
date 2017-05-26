@@ -249,7 +249,7 @@ def getBiomeName(biomeId):
         167: 'Mesa Plateau M'
     }
 
-    return biomeNameDict.get(biomeId, 'Biome %d' % biomeId)
+    return biomeNameDict.get(biomeId, 'Biome %s' % biomeId)
 
 # start at y = 64 as guess for floor level
 y = 64
