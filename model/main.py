@@ -49,11 +49,12 @@ def main():
     
     if FLAGS.test:
         print ("testing")
-        asw=predict(final_label,final_images,FLAGS)
+        asw = predict(final_label,final_images,FLAGS)
         print("-"*50)
         return
-    #if FLAGS.real_time_pre:
-        #predict_()
+    if FLAGS.real_time_pre:
+        ase = predict_predict(final_label=None,final_images=None,FLAGS=None)
+        reutrn 
     with tf.Session() as sess:
         init = tf.global_variables_initializer()
         sess.run(init)
