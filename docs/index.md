@@ -5,10 +5,12 @@ title:  Home
 
 ## What is _Insert Team Name Here_ ?
 
-Our project is a program that learns to better predict biomes based off an image primarily using deep learning. 
+In Minecraft, there are over 30 different types of biomes that can spawn within any map. These range from common ones, such as grass plains and forests, to uncommon or rare ones, such as mesa and mushroom forests. 
 
---
+Our project is a program that learns to better understand the characteristics of these biomes by learning to predict what they are based off an image. These images are generated randomly using data generation scripts on a randomly generated world in Minecraft. We then use deep learning to predict the type of biome from that image and improve the accuracy of our program.  
 
+
+![Biomes pic](http://minecraftsix.com/wp-content/uploads/2014/10/biomes-o-plenty-4.jpg)
 
 
 ### Source Code for project: <https://github.com/anahitab/PROJECT>
@@ -20,7 +22,7 @@ Our project is a program that learns to better predict biomes based off an image
 - <https://github.com/dennybritz/reinforcement-learning>
 - **MCEdit:** <https://github.com/Khroki/MCEdit-Unified>
 - **Malmo:** <https://github.com/Microsoft/malmo>
-- 
+
 
 
 
