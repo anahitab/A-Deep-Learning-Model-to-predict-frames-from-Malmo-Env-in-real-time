@@ -4,7 +4,7 @@ import random
 import time
 import json
 import sys
-from test import predict_
+from real_time_pre import predict_
 import numpy as np
 from main import FLAGS
 from scipy import misc
