@@ -8,6 +8,7 @@ import glob
 import os
 import random
 from data_preprocessing import final_labels , get_raw ,image_labels
+from real_time_pre import predict_
 from test import predict
 
 
@@ -27,6 +28,7 @@ tf.app.flags.DEFINE_integer("img_size_flat",65536,"dimension of image")
 tf.app.flags.DEFINE_integer("num_epochs",20,"number of epochs")
 
 tf.app.flags.DEFINE_bool("test",True,"use True for testing")
+tf.app.flags.DEFINE_bool("real_time_pre",False,"use True for testing")
 tf.app.flags.DEFINE_bool("load_train",False,"use True to continue from previous training checkpoint")
 tf.app.flags.DEFINE_string("path_to_csv","/home/prayalankar/Downloads/anahita/new_csv.csv","change according to your path")
 tf.app.flags.DEFINE_string("save_dir","/home/prayalankar/Downloads/anahita/ter","change according to your path")
@@ -49,7 +51,9 @@ def main():
         print ("testing")
         asw=predict(final_label,final_images,FLAGS)
         print("-"*50)
-        return 
+        return
+    #if FLAGS.real_time_pre:
+        #predict_()
     with tf.Session() as sess:
         init = tf.global_variables_initializer()
         sess.run(init)
