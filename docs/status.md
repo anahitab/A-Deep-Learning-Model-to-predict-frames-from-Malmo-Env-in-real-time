@@ -31,6 +31,10 @@ There are 3 steps to how we generated the data:
 
 ## Evaluation
 
+## Demo Video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iJBFe0ALHdc" frameborder="0" allowfullscreen></iframe>
+
 ## Remaining Goals and Challenges
 
 One of our remaining goals for the project is to generate more images for testing. Since we have only done one round of data generation for one world seed in Minecraft, creating images within different worlds can help train our program to better predict biomes. 
