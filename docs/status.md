@@ -33,6 +33,8 @@ There are 3 steps to how we generated the data:
 
 ## Demo Video
 
+Watch our program predict biomes in real time, as a player explores the world.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iJBFe0ALHdc" frameborder="0" allowfullscreen></iframe>
 
 ## Remaining Goals and Challenges
