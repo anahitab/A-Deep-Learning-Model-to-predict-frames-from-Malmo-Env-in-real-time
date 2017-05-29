@@ -103,6 +103,7 @@ def predict(final_label,final_images,FLAGS,images_aert,pllot=True):
         print("Testing Accuracy:", sess.run(accuracy, feed_dict={x: test_data, y_true: test_label}))
         if pllot:
             plot_images(a3,test_label,ase)
+	    plot_confusion_matrix(ase,test_label,num_classes)
         return ase , test_label
 	
 
@@ -151,4 +152,30 @@ def plot_images(imges, cls_true, cls_pred=None):
         ax.set_yticks([])
     
     plt.show()
+    time.sleep(0.3)
+    return 0
+def plot_confusion_matrix(cls_pred,cls_true,num_classes):
+    #cls_true = data.valid.cls
+    axcv =[];pred=[]
+    for val in cls_pred:
+        pred.append(np.argmax(val))
+
+    for val in cls_true:
+        axcv.append(val.index(1))
+
+    cm = confusion_matrix(y_true=axcv,
+                          y_pred=pred)
+
+    print(cm)
+    plt.matshow(cm)
+    plt.colorbar()
+    tick_marks = np.arange(num_classes)
+    plt.xticks(tick_marks, range(num_classes))
+    plt.yticks(tick_marks, range(num_classes))
+    plt.xlabel('Predicted')
+    plt.ylabel('True')
+    plt.show()
+    time.sleep(0.5)
+    return 0
+
 
