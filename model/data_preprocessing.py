@@ -37,9 +37,11 @@ def image_labels(im_id,im_label):
     print("length of id is",len(im_label))
     final_label=[]
     final_images=[]
+    images_aert=[]
     cvg=0
     for fil in tqdm(glob.glob("/home/prayalankar/Downloads/anahita/images/*.png")):
         ax = fil
+        
         op=ax.lstrip("/home/prayalankar/Downloads/anahita")
         #print op
         if op in im_id:
@@ -48,8 +50,9 @@ def image_labels(im_id,im_label):
             final_label.append(im_label[idx])
             rt = misc.imread(fil)
             final_images.append(rt)
+            images_aert.append(ax)
         #if cvg==1000:
             #break
     print("length of id is",len(final_images))
     print("length of id is",len(final_images))
-    return final_images , final_label
+    return final_images , final_label , images_aert
