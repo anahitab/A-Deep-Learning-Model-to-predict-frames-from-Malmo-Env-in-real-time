@@ -19,7 +19,7 @@ The tools used in generating these images are the following:
 * [MCEdit Unified](https://github.com/Khroki/MCEdit-Unified): To help generate the map and extract biome information
 * [Minecraft 1.8 server jar](https://s3.amazonaws.com/Minecraft.Download/versions/1.8/minecraft_server.1.8.jar): This jar is added to MCEdit to help generate the maps
 * [Malmo](https://github.com/Microsoft/malmo): Used to generate the screenshots
-# Approach for Biome Classification
+### Approach for Biome Classification
 Explanation of Model:
  
 We used Deep Learning approach for the classification of the biomes from the Malmo environment. Deep learning does the excellent work of feature extraction from any Object/Image or even the text.
