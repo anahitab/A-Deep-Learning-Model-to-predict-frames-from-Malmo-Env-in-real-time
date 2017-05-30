@@ -49,8 +49,9 @@ The first layer has filter of shape 3X3 and the number of filters were 32. We al
 
 
 ## Evaluation
-
+We tested our model on the test dataset. Our model has a pretty good accuracy and it is around 94%. Following is the sampel output with True label and predicted label.
 ![alt text](https://github.com/anahitab/A-Deep-Learning-Model-to-predict-frames-from-Malmo-Env-in-real-time/blob/master/docs/img/figure_2-1.png)
+Confusion matrix to describe the performance of our classification model on the test data.
 ![alt_text](https://github.com/anahitab/A-Deep-Learning-Model-to-predict-frames-from-Malmo-Env-in-real-time/blob/master/docs/img/fig_2-1.png)
 
 
