@@ -50,6 +50,10 @@ The first layer has filter of shape 3X3 and the number of filters were 32. We al
 
 ## Evaluation
 
+![alt text](https://github.com/anahitab/A-Deep-Learning-Model-to-predict-frames-from-Malmo-Env-in-real-time/blob/master/docs/img/figure_2-1.png)
+![alt_text](https://github.com/anahitab/A-Deep-Learning-Model-to-predict-frames-from-Malmo-Env-in-real-time/blob/master/docs/img/fig_2-1.png)
+
+
 ## Demo Video
 
 Watch our program predict biomes in real time, as a player explores the world.
