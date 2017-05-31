@@ -1,4 +1,9 @@
 
+## Demo Video
+
+Watch our program predict biomes in real time, as a player explores the world.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iJBFe0ALHdc" frameborder="0" allowfullscreen></iframe>
 
 ## Project Summary
 
@@ -45,21 +50,14 @@ The first layer has filter of shape 3X3 and the number of filters were 32. We al
 
 
 
-
-
-
 ## Evaluation
 We tested our model on the test dataset. Our model has a pretty good accuracy and it is around 94%. Following is the sampel output with True label and predicted label.
-![alt text](https://github.com/anahitab/A-Deep-Learning-Model-to-predict-frames-from-Malmo-Env-in-real-time/blob/master/docs/img/figure_2-1.png)
+![Graph 1](https://github.com/anahitab/A-Deep-Learning-Model-to-predict-frames-from-Malmo-Env-in-real-time/blob/master/docs/img/figure_2-1.png)
 Confusion matrix to describe the performance of our classification model on the test data.
-![alt_text](https://github.com/anahitab/A-Deep-Learning-Model-to-predict-frames-from-Malmo-Env-in-real-time/blob/master/docs/img/fig_2-1.png)
+![Graph 2](https://github.com/anahitab/A-Deep-Learning-Model-to-predict-frames-from-Malmo-Env-in-real-time/blob/master/docs/img/fig_2-1.png)
 
 
-## Demo Video
 
-Watch our program predict biomes in real time, as a player explores the world.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iJBFe0ALHdc" frameborder="0" allowfullscreen></iframe>
 
 ## Remaining Goals and Challenges
 
