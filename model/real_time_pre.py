@@ -104,7 +104,7 @@ def predict_(final_label,final_images,FLAGS):
         tpi=list(ase[0])
         #print("\n")
       	apol= tpi.index(max(tpi))
-        print("value of index is",apol)
+        #print("value of index is",apol)
         #print("new_doc"*10)
         #print("Testing Accuracy:", sess.run(accuracy, feed_dict={x: test_data, y_true: test_label}))
         #return ase , test_label

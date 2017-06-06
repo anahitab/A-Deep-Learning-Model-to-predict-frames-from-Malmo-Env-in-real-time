@@ -14,8 +14,8 @@ from scipy import misc
 import tensorflow as tf
 
 # replace this with the path on your system
-#map_file_path = '/Users/cory/Library/Application Support/minecraft/saves/Seed1Size100x100'
-map_file_path = '/home/prayalankar/Downloads/Malmo/Minecraft/saves/Seed1Size100x100'
+map_file_path = '/Users/cory/Library/Application Support/minecraft/saves/Seed1Size100x100'
+#map_file_path = '/home/prayalankar/Downloads/Malmo/Minecraft/saves/Seed1Size100x100'
 
 
 minx = -800

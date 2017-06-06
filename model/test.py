@@ -94,4 +94,5 @@ def predict(final_label,final_images,FLAGS):
         #print("Testing Accuracy:", sess.run(accuracy, feed_dict={x: test_data, y: test_label}))
         ase = sess.run(y_pred,feed_dict={x:x_batch,y_true:a2})
         print("Testing Accuracy:", sess.run(accuracy, feed_dict={x: test_data, y_true: test_label}))
+        print ( ('ase', ase, '; test_label', test_label) )
         return ase , test_label

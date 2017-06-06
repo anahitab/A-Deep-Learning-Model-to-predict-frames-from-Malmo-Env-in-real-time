@@ -22,10 +22,11 @@ def get_raw(path_to_csv):
     df = pd.read_csv(path_to_csv)
     print df.columns
     aw2s= df.images
+    #print('ZZZ HERE IS AW2S 0:' +  str(aw2s[0]))
     aw1s = df[df.columns[1]]
     im_id=[];im_label=[]
     for val in aw2s:
-        im_id.append(val.lstrip("data/ima"))
+        im_id.append(val.lstrip("data/i"))
     for val in aw1s:
         im_label.append(val)
     return im_id,im_label
@@ -38,9 +39,10 @@ def image_labels(im_id,im_label):
     final_label=[]
     final_images=[]
     cvg=0
-    for fil in tqdm(glob.glob("/home/prayalankar/Downloads/anahita/images/*.png")):
+    dataDir='/Users/cory/aip/data'
+    for fil in tqdm(glob.glob(dataDir + "/images/*.png")):
         ax = fil
-        op=ax.lstrip("/home/prayalankar/Downloads/anahita")
+        op=ax.lstrip(dataDir)
         #print op
         if op in im_id:
             cvg+=1

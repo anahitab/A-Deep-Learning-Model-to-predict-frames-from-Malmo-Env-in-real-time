@@ -31,7 +31,8 @@ tf.app.flags.DEFINE_bool("test",True,"use True for testing")
 tf.app.flags.DEFINE_bool("real_time_pre",False,"use True for testing")
 tf.app.flags.DEFINE_bool("load_train",False,"use True to continue from previous training checkpoint")
 tf.app.flags.DEFINE_string("path_to_csv","/home/prayalankar/Downloads/anahita/new_csv.csv","change according to your path")
-tf.app.flags.DEFINE_string("save_dir","/home/prayalankar/Downloads/anahita/ter","change according to your path")
+#tf.app.flags.DEFINE_string("save_dir","/home/prayalankar/Downloads/anahita/ter","change according to your path")
+tf.app.flags.DEFINE_string("save_dir","/Users/cory/aip/project_save","change according to your path")
 
 from model import img_Model
 
