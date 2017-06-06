@@ -20,7 +20,7 @@ Other examples of uses of our project could be for detecting what kind of enviro
 
 ## Approaches
 
-###Image/Data Generation
+### Image/Data Generation
 In order to generate all of the images for testing, we implemented basic data generation scripts to create thousands of images to test. In the first round of testing, we generated about 10,201 images in total to test. The data for all of this images can be accessed on our Github Page and is [Available Here](https://github.com/anahitab/PROJECT/releases)
 
 The tools used in generating these images are the following: 
