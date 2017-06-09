@@ -3,9 +3,9 @@ layout: default
 title:  Final Report
 ---
 
-## Video
+## Video //todo: need to add description to video
 
-[![Description of the Video](https://img.youtube.com/vi/FI3aW0RabBg/0.jpg)](https://www.youtube.com/watch?v=FI3aW0RabBg)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iJBFe0ALHdc" frameborder="0" allowfullscreen></iframe>
 
 ## Project Summary
 
@@ -29,7 +29,7 @@ The tools used in generating these images are the following:
 * [Minecraft 1.8 server jar](https://s3.amazonaws.com/Minecraft.Download/versions/1.8/minecraft_server.1.8.jar): This jar is added to MCEdit to help generate the maps
 * [Malmo](https://github.com/Microsoft/malmo): Used to generate the screenshots
 
-### Process
+### Process //todo: add more detail after 2nd round of data 
 There are 3 steps to how we generated the data: 
 
 1. **Generate the map.** To pregenerate a map, we create a new world in MCEdit. We use the seed "1".
@@ -38,7 +38,7 @@ There are 3 steps to how we generated the data:
 
 ### Approach for Biome Classification
 We used Deep Learning approach for the classification of the biomes from the Malmo environment. Deep learning does the excellent work of feature extraction from any Object/Image or even the text.
-There are so many type of Neural Networks but using Convolutional Neural Network is so natural as they can be applied to whole image at a time so they are good at extracting features at once.
+There are many types of Neural Networks, but using a Convolutional Neural Network is so natural as they can be applied to whole image at a time. This means that they are good at extracting features at once.
  
 In our model we used three layers of CNN:
 The first layer has filter of shape 3X3 and the number of filters were 32. We also used max pooling layer using a window size of two get the maximum value.<br>
@@ -51,9 +51,9 @@ The first layer has filter of shape 3X3 and the number of filters were 32. We al
 
 
 
-## Evaluation
+## Evaluation //todo: 2nd round of testing, and explain graphs 
 
-# //todo
+
 
 We tested our model on the test dataset. Our model has a pretty good accuracy and it is around 94%. Following is the sampel output with True label and predicted label.
 
