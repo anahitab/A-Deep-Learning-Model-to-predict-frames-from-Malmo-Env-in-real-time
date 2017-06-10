@@ -7,13 +7,20 @@ from scipy import misc
 import glob
 import os
 import random
+from PIL import Image
 from data_preprocessing import final_labels , get_raw ,image_labels
 from nn_helper import new_weights,new_biases,new_conv_layer,flatten_layer,new_fc_layer
 from data_helper import data_iterator
+
+from sklearn.metrics import confusion_matrix
+import time
+from sklearn.metrics import confusion_matrix
+import time
+
 #from main import FLAGS
+import matplotlib.pyplot as plt
 
-
-def predict(final_label,final_images,FLAGS):
+def predict(final_label,final_images,FLAGS,images_aert,pllot=True):
    
     tf.reset_default_graph()
     checkpoint_dir = FLAGS.save_dir
@@ -84,8 +91,8 @@ def predict(final_label,final_images,FLAGS):
 
         
         test_len = 10
-        d_itr   = data_iterator(final_images,final_label)
-        a1, a2  = d_itr.next_batch(test_len)
+        d_itr   = data_iterator(final_images,final_label,images_aert)
+        a1, a2 ,a3  = d_itr.next_batch(test_len)
         x_batch = np.reshape(a1,[test_len, imz_size_flat])
 
         test_data = x_batch
@@ -94,5 +101,81 @@ def predict(final_label,final_images,FLAGS):
         #print("Testing Accuracy:", sess.run(accuracy, feed_dict={x: test_data, y: test_label}))
         ase = sess.run(y_pred,feed_dict={x:x_batch,y_true:a2})
         print("Testing Accuracy:", sess.run(accuracy, feed_dict={x: test_data, y_true: test_label}))
-        print ( ('ase', ase, '; test_label', test_label) )
+        if pllot:
+            plot_images(a3,test_label,ase)
+	    plot_confusion_matrix(ase,test_label,num_classes)
         return ase , test_label
+	
+
+
+def plot_images(imges, cls_true, cls_pred=None):
+    print(cls_true[0])
+    print (cls_pred[0],"sdfsdfs")
+    axcv =[];pred=[]
+    for val in cls_pred:
+        #pred.append(val.index(np.max(val)))
+        pred.append(np.argmax(val))
+
+    for val in cls_true:
+        axcv.append(val.index(1))
+
+
+    images = []
+    t = len(cls_true)
+    for val in imges[:t-1]:
+        ax = Image.open(val)
+        images.append(ax)
+    
+    if len(images) == 0:
+        print("no images to show")
+        return 
+    else:
+        random_indices = random.sample(range(len(images)), min(len(images), 9))
+        print random_indices
+    images, cls_true  = zip(*[(images[i], axcv[i]) for i in random_indices])
+    
+    fig, axes = plt.subplots(3, 3)
+    fig.subplots_adjust(hspace=0.3, wspace=0.3)
+    #print axes.flat
+
+    for i, ax in enumerate(axes.flat):
+        print i,ax
+        ax.imshow(images[i])
+
+        if cls_pred is None:
+            xlabel = "True: {0}".format(axcv[i])
+        else:
+            xlabel = "True: {0}, Pred: {1}".format(axcv[i], pred[i])
+        ax.set_xlabel(xlabel)
+        
+        ax.set_xticks([])
+        ax.set_yticks([])
+    
+    plt.show()
+    time.sleep(0.3)
+    return 0
+def plot_confusion_matrix(cls_pred,cls_true,num_classes):
+    #cls_true = data.valid.cls
+    axcv =[];pred=[]
+    for val in cls_pred:
+        pred.append(np.argmax(val))
+
+    for val in cls_true:
+        axcv.append(val.index(1))
+
+    cm = confusion_matrix(y_true=axcv,
+                          y_pred=pred)
+
+    print(cm)
+    plt.matshow(cm)
+    plt.colorbar()
+    tick_marks = np.arange(num_classes)
+    plt.xticks(tick_marks, range(num_classes))
+    plt.yticks(tick_marks, range(num_classes))
+    plt.xlabel('Predicted')
+    plt.ylabel('True')
+    plt.show()
+    time.sleep(0.5)
+    return 0
+
+

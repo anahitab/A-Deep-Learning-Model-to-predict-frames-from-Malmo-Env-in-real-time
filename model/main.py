@@ -42,7 +42,7 @@ FLAGS = tf.app.flags.FLAGS
 def main():
 
     im_id ,im_label = get_raw(FLAGS.path_to_csv)
-    final_images , temp_label = image_labels(im_id,im_label)
+    final_images , temp_label, images_aert= image_labels(im_id,im_label)
     final_label = final_labels(temp_label)
     
     tf.reset_default_graph()
@@ -50,7 +50,7 @@ def main():
     
     if FLAGS.test:
         print ("testing")
-        asw = predict(final_label,final_images,FLAGS)
+        asw = predict(final_label,final_images,FLAGS,images_aert)
         print("-"*50)
         return
     if FLAGS.real_time_pre:

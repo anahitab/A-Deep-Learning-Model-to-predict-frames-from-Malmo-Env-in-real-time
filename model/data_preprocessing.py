@@ -8,6 +8,13 @@ import glob
 import os
 import random
 
+# anahita configuration
+dataDir="/home/prayalankar/Downloads/anahita"
+stripPrefix="data/ima"
+
+# cory configuration
+#dataDir='/Users/cory/aip/data'
+#stripPrefix="data/i"
 
 
 def final_labels(label_file):
@@ -26,7 +33,7 @@ def get_raw(path_to_csv):
     aw1s = df[df.columns[1]]
     im_id=[];im_label=[]
     for val in aw2s:
-        im_id.append(val.lstrip("data/i"))
+        im_id.append(val.lstrip(stripPrefix))
     for val in aw1s:
         im_label.append(val)
     return im_id,im_label
@@ -38,8 +45,8 @@ def image_labels(im_id,im_label):
     print("length of id is",len(im_label))
     final_label=[]
     final_images=[]
+    images_aert=[]
     cvg=0
-    dataDir='/Users/cory/aip/data'
     for fil in tqdm(glob.glob(dataDir + "/images/*.png")):
         ax = fil
         op=ax.lstrip(dataDir)
@@ -50,8 +57,8 @@ def image_labels(im_id,im_label):
             final_label.append(im_label[idx])
             rt = misc.imread(fil)
             final_images.append(rt)
+            images_aert.append(ax)
         #if cvg==1000:
             #break
     print("length of id is",len(final_images))
-    print("length of id is",len(final_images))
-    return final_images , final_label
+    return final_images , final_label , images_aert
