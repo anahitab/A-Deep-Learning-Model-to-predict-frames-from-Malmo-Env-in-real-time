@@ -22,7 +22,7 @@ fout = open('data/images.txt', 'w+')
 fout.write('imagePath\tbiomeID\n')
 
 for image in os.listdir('data/images'):
-    match = re.match(r".+?_(.+?)_(.+?)\..*", image)
+    match = re.match(r".+_(-?\d+)_(-?\d+)\..*", image)
     if not match:
         raise Exception('invalid image name')
     
