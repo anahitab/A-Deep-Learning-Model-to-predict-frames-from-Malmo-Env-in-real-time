@@ -33,7 +33,7 @@ The tools used in generating these images are the following:
 * [Minecraft 1.8 server jar](https://s3.amazonaws.com/Minecraft.Download/versions/1.8/minecraft_server.1.8.jar): This jar is added to MCEdit to help generate the maps
 * [Malmo](https://github.com/Microsoft/malmo): Used to generate the screenshots
 
-### Process //todo: add more detail after 2nd round of data 
+### Process
 There are 3 steps to how we generated the data: 
 
 1. **Generate the map.** To pregenerate a map, we create a new world in MCEdit. We use the seed "1".
