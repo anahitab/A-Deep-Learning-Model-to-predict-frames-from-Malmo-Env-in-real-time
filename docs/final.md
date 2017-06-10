@@ -21,7 +21,11 @@ Other examples of uses of our project could be for detecting what kind of enviro
 ## Approaches
 
 ### Image/Data Generation
-In order to generate all of the images for testing, we implemented basic data generation scripts to create thousands of images to test. In the first round of testing, we generated about 10,201 images in total to test. The data for all of this images can be accessed on our Github Page and is [Available Here](https://github.com/anahitab/PROJECT/releases)
+In order to generate all of the images for testing, we implemented basic data generation scripts to create thousands of images to test. In the first round of testing, we generated about 10,201 images in total to test. The data for all of this images can be accessed on our Github Page and is [Available Here](https://github.com/anahitab/A-Deep-Learning-Model-to-predict-frames-from-Malmo-Env-in-real-time/releases)
+
+In the second round of testing, our final data set, we generated more images with different times of day, yaw, and pitch. We captured a screenshot of each chunk at 4 different times: 0 (sunrise), 6000 (noon), 12000 (sunset), 18000 (night). The yaw and pitch are random (uniformly distributed) for each data point. We generated over 40,000 images in this last round of testing. This final data set can be accessed on our Github as well and is [Available Here](https://github.com/anahitab/A-Deep-Learning-Model-to-predict-frames-from-Malmo-Env-in-real-time/releases/tag/v1.0.0)
+
+We used the original map, so the biomeID -> class can stay the same (no new biomes). This will make it easier to compare performance of the old model and new model.
 
 The tools used in generating these images are the following: 
 
