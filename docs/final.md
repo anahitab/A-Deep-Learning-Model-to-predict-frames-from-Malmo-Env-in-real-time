@@ -9,9 +9,9 @@ title:  Final Report
 
 ## Project Summary
 
-Our project focuses on applying deep learning models so that it can be used for classification task. The main premise of this project is to generate many random maps with the help of Malmo and take screenshots from random points in that map and identify what biome or naturally generated stucture is within that specific picture.
+Our Biome-Predictor focuses on applying deep learning models so that it can be used for classification task. The main premise of this project is to generate many random maps with the help of Malmo and take screenshots from random points in that map and identify what biome is within that specific picture.
 
-Our project will take in a screenshot of a map as input and return one or more names of the biomes or structures that are shown in that picture. The main focus of this project will be towards the detection of biomes and structures primarily in the Overworld of Minecraft. 
+Our project will take in a screenshot of a map as input and return one or more names of the biomes that are shown in that picture. The main focus of this project will be towards the detection of biomes and structures primarily in the Overworld of Minecraft. 
 
 The final product of this task should be able to return the name of a predicted biome while controlling a character within a Malmo generated world.
 
@@ -48,12 +48,12 @@ There are 3 steps to how we generated the data:
 
 ### Approach for Biome Classification
 
-Before classifying our biomes, we had to choose what biomes that we want our AI to train. Within the game of Minecraft, there is a total of 63 distinct biomes: 51 in the Overworld, one in The Nether, and one in The End.
+Before classifying our biomes, we had to choose what biomes that we want our AI to train. Within the game of Minecraft, there is a total of 63 distinct biomes: 61 in the Overworld, one in The Nether, and one in The End.
 
 We used the [Minecraft Wiki Biomes Page](http://minecraft.gamepedia.com/Biome) as a reference for all of the possible biomes that can possibly be used in our program.
 We stored all of the possible biomes into a dictionary called `biomeNameDict` so that it can be used for our prediction classes. 
 
-Out of all of these biomes, these are the following biomes, with their respective ID's, that we chose to train our AI: 
+Out of all of these biomes, these are the following biomes, with their respective ID's, that we chose to train our model: 
  
 * 0 : 'Ocean'
 * 1 : 'Plains'
