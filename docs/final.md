@@ -48,7 +48,7 @@ There are 3 steps to how we generated the data:
 
 ### Approach for Biome Classification
 
-Before classifying our biomes, we had to choose what biomes that we want our AI to train. Within the game of Minecraft, there is a total of 63 distinct biomes: 38 in the Overworld, one in The Nether, and one in The End.
+Before classifying our biomes, we had to choose what biomes that we want our AI to train. Within the game of Minecraft, there is a total of 63 distinct biomes: 51 in the Overworld, one in The Nether, and one in The End.
 
 We used the [Minecraft Wiki Biomes Page](http://minecraft.gamepedia.com/Biome) as a reference for all of the possible biomes that can possibly be used in our program.
 We stored all of the possible biomes into a dictionary called `biomeNameDict` so that it can be used for our prediction classes. 
