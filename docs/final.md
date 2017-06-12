@@ -3,7 +3,7 @@ layout: default
 title:  Final Report
 ---
 
-## Video //todo: need to add description to video
+## Video
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iJBFe0ALHdc" frameborder="0" allowfullscreen></iframe>
 
@@ -98,7 +98,7 @@ The first layer has filter of shape 3X3 and the number of filters were 32. We al
 
 
 
-## Evaluation //todo: 2nd round of testing, and explain graphs 
+## Evaluation  
 
 
 
