@@ -50,41 +50,43 @@ We stored all of the possible biomes into a dictionary so that it can be used fo
 Out of all of these biomes, these are the following biomes, with their respective ID's, that we chose to train our AI: 
  
 * 0 : 'Ocean'
-* 24 : 'Deep Ocean'
-* 16 : 'Beach'
-* 4 : 'Forest'
-* 18 : 'ForestHills'
-* 7 : 'River'
-* 6 : 'Swampland'
 * 1 : 'Plains'
-* 129 : 'Sunflower Plains'
+* 3 : 'Extreme Hills'
+* 4 : 'Forest'
+* 5 : 'Taiga'
+* 6 : 'Swampland'
+* 7 : 'River'
+* 16 : 'Beach'
+* 18 : 'ForestHills'
+* 19 : 'TaigaHills'
+* 21 : 'Jungle'
+* 22 : 'JungleHills'
+* 23 : 'JungleEdge'
+* 24 : 'Deep Ocean'
+* 25 : 'Stone Beach'
 * 27 : 'Birch Forest'
 * 28 : 'Birch Forest Hills'
-* 155 : 'Birch Forest M'
-* 5 : 'Taiga'
 * 29 :  'Roofed Forest'
-* 132 : 'Flower Forest'
-* 3 : 'Extreme Hills'
 * 34 : 'Extreme Hills+'
-* 25 : 'Stone Beach'
+* 129 : 'Sunflower Plains'
 * 131 : 'Extreme Hills M'
-* 21 : 'Jungle'
-* 19 : 'TaigaHills'
-* 23 : 'JungleEdge'
-* 22 : 'JungleHills'
-* 22 : 'JungleHills'
-
-We selected these biomes becuase they are the most common biomes that we will see in the Overworld, which will be the primary location for testing. 
-We take the ID's of each of these biomes and stored them into a list (`biomeIdList`) in order to convert between our prediction classes and Mincraft biome ID's
+* 132 : 'Flower Forest'
+* 155 : 'Birch Forest M'
 
 
 
-We used Deep Learning approach for the classification of the biomes from the Malmo environment. Deep learning does the excellent work of feature extraction from any Object/Image or even the text.
+
+We selected these biomes because they are the most common biomes that we will see in the Overworld, which will be the primary location for testing. 
+We take the ID's of each of these biomes and stored them into a list called `biomeIdList` in order to convert between our prediction classes and Mincraft biome ID's
+
+
+
+We used a Deep Learning approach for the classification of the biomes from the Malmo environment. Deep learning does the excellent work of feature extraction from any Object/Image or even the text.
 There are many types of Neural Networks, but using a Convolutional Neural Network is so natural as they can be applied to whole image at a time. This means that they are good at extracting features at once.
  
 In our model we used three layers of CNN:
-The first layer has filter of shape 3X3 and the number of filters were 32. We also used max pooling layer using a window size of two get the maximum value.<br>
-1. ReLU was also used so that it can model to learn more complicated relations.<br>
+The first layer has filter of shape 3X3 and the number of filters were 32. We also used max pooling layer using a window size of two get the maximum value.
+1. ReLU was also used so that it can model to learn more complicated relations.
 2. Our second layer has filter of shape 3X3 and the number of filters were 32. We also used max pooling layer of window size in two. ReLU was also used in this layer.
 3. Our third layer has filter of shape 3X3 and the number of filters were 64. We also used max pooling layer using a window size of two get the maximum value. ReLU was also used in this layer.
 4. We have to add fully-connected layers after the convolution layers, so we need to reduce the 4-dim tensor to 2-dim which can be used as input to the fully-connected layer. For this we need to flatten the output of the previous layer and we flatten the output from last layer.

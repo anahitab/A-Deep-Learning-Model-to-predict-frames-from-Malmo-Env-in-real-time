@@ -25,7 +25,7 @@ With the use of Malmo, we can predict what biome we are in real time while contr
 - **MCEdit:** <https://github.com/Khroki/MCEdit-Unified>
 - **Malmo:** <https://github.com/Microsoft/malmo>
 - **Tensorflow** <https://github.com/tensorflow/tensorflow>
-
+- **Minecraft Wiki** <http://minecraft.gamepedia.com/Minecraft_Wiki>
 
 
 
