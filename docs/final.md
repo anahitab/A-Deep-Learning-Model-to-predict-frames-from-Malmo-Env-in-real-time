@@ -44,105 +44,38 @@ There are 3 steps to how we generated the data:
 
 Before classifying our biomes, we had to choose what biomes that we want our AI to train. Within the game of Minecraft, there is a total of 63 distinct biomes: 38 in the Overworld, one in The Nether, and one in The End.
 
-Here is a table on all the possible biomes with their respective ID's that can possibly be used in our program:
+We used the [Minecraft Wiki Biomes Page](http://minecraft.gamepedia.com/Biome) as a reference for all of the possible biomes that can possibly be used in our program.
+We stored all of the possible biomes into a dictionary so that it can be used for our prediction classes. 
 
-| ID | Biome |
-| --- | ---------------------------- |
-| 0 | Ocean |
-| 1 | Plains |
-| 129 | Sunflower Plains |
-| 2 | Desert  |
-| 130 | Desert M |
-
-
-3 | Extreme Hills |
-131 | Extreme Hills M |
-131 | Extreme Hills M |
-4 | 'Forest'
-132 | 'Flower Forest'
-5 | 'Taiga'
-133 | 'Taiga M'
-6 | 'Swampland'
-134 | 'Swampland M'
-7 | 'River'
-8 | 'Hell'
-9 | 'The End (Sky)'
-10 | 'FrozenOcean'
-11 | 'FrozenRiver'
-12 | 'Ice Plains'
-140 | 'Ice Plains Spikes'
-13 | 'Ice Mountains'
-14 | 'MushroomIsland'
-15 | 'MushroomIslandShore'
-16 | 'Beach'
-17 | 'DesertHills'
-18 | 'ForestHills'
-19 | 'TaigaHills'
-20 | 'Extreme Hills Edge'
-21 | 'Jungle'
-149 | 'Jungle M'
-22 | 'JungleHills'
-23 | 'JungleEdge'
-151 | 'JungleEdge M'
-24 | 'Deep Ocean'
-25 | 'Stone Beach'
-26 | 'Cold Beach'
-27 | 'Birch Forest'
-155 | 'Birch Forest M'
-28 | 'Birch Forest Hills'
-156 | 'Birch Forest Hills M'
-29 | 'Roofed Forest'
-157 | 'Roofed Forest M'
-30 | 'Cold Taiga'
-158 | 'Cold Taiga M'
-31 | 'Cold Taiga Hills'
-32 | 'Mega Taiga'
-160 | 'Mega Spruce Taiga'
-33 | 'Mega Taiga Hills'
-161 | 'Redwood Taiga Hills M'
-34 | 'Extreme Hills+'
-162 | 'Extreme Hills+ M'
-35 | 'Savanna'
-163 | 'Savanna M'
-36 | 'Savanna Plateau'
-164 | 'Savanna Plateau M'
-37 | 'Mesa'
-165 | 'Mesa (Bryce)'
-38 | 'Mesa Plateau F'
-166 | 'Mesa Plateau F M'
-39 | 'Mesa Plateau'
-167 | 'Mesa Plateau M'
-
-Out of all of these biomes, these are the following biomes that we chose to train our AI: 
-
-ID | Biome
---- | --- 
-0 | 'Ocean'
-24 | 'Deep Ocean'
-16 | 'Beach'
-4 | 'Forest'
-18 | 'ForestHills'
-7 | 'River'
-6 | 'Swampland'
-1 | 'Plains'
-129 | 'Sunflower Plains'
-27 | 'Birch Forest'
-28 | 'Birch Forest Hills'
-155 | 'Birch Forest M'
-5 | 'Taiga'
-29 |  'Roofed Forest'
-132 | 'Flower Forest'
-3 | 'Extreme Hills'
-34 | 'Extreme Hills+'
-25 | 'Stone Beach'
-131 | 'Extreme Hills M'
-21 | 'Jungle'
-19 | 'TaigaHills'
-23 | 'JungleEdge'
-22 | 'JungleHills'
-22 | 'JungleHills'
+Out of all of these biomes, these are the following biomes, with their respective ID's, that we chose to train our AI: 
+ 
+* 0 : 'Ocean'
+* 24 : 'Deep Ocean'
+* 16 : 'Beach'
+* 4 : 'Forest'
+* 18 : 'ForestHills'
+* 7 : 'River'
+* 6 : 'Swampland'
+* 1 : 'Plains'
+* 129 : 'Sunflower Plains'
+* 27 : 'Birch Forest'
+* 28 : 'Birch Forest Hills'
+* 155 : 'Birch Forest M'
+* 5 : 'Taiga'
+* 29 :  'Roofed Forest'
+* 132 : 'Flower Forest'
+* 3 : 'Extreme Hills'
+* 34 : 'Extreme Hills+'
+* 25 : 'Stone Beach'
+* 131 : 'Extreme Hills M'
+* 21 : 'Jungle'
+* 19 : 'TaigaHills'
+* 23 : 'JungleEdge'
+* 22 : 'JungleHills'
+* 22 : 'JungleHills'
 
 We selected these biomes becuase they are the most common biomes that we will see in the Overworld, which will be the primary location for testing. 
+We take the ID's of each of these biomes and stored them into a list (`biomeIdList`) in order to convert between our prediction classes and Mincraft biome ID's
 
 
 
