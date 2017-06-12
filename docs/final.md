@@ -74,11 +74,8 @@ Out of all of these biomes, these are the following biomes, with their respectiv
 * 155 : 'Birch Forest M'
 
 
-
-
 We selected these biomes because they are the most common biomes that we will see in the Overworld, which will be the primary location for testing. 
 We take the ID's of each of these biomes and stored them into a list called `biomeIdList` in order to convert between our prediction classes and Mincraft biome ID's
-
 
 
 We used a Deep Learning approach for the classification of the biomes from the Malmo environment. Deep learning does the excellent work of feature extraction from any Object/Image or even the text.
@@ -99,16 +96,16 @@ The first layer has filter of shape 3X3 and the number of filters were 32. We al
 
 
 
-We tested our model on the test dataset. Our model has a pretty good accuracy and it is around 94%. Following is the sampel output with True label and predicted label.
+We tested our model on the test dataset. Our model has a pretty good accuracy and it is around 94%. Following is the sample output with True label and predicted label.
 
 
-![Graph 1](https://raw.githubusercontent.com/anahitab/Biome-Predictor/master/docs/img/figure_2-1.png)
+![Graph 1](https://raw.githubusercontent.com/anahitab/Biome-Predictor/master/docs/img/fig_2-1.png)
 
 
 Confusion matrix to describe the performance of our classification model on the test data. 
 
 
-![Graph 2](https://raw.githubusercontent.com/anahitab/Biome-Predictor/master/docs/img/fig_2-1.png)
+![Graph 2](https://raw.githubusercontent.com/anahitab/Biome-Predictor/master/docs/img/figure_2-1.png)
 
 ## References
 
