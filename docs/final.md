@@ -47,6 +47,7 @@ Before classifying our biomes, we had to choose what biomes that we want our AI 
 Here is a table on all the possible biomes with their respective ID's that can possibly be used in our program:
 
 ID | Biome
+--- | ---
 0 | 'Ocean'
 1 | 'Plains'
 129 | 'Sunflower Plains'
@@ -112,6 +113,7 @@ ID | Biome
 Out of all of these biomes, these are the following biomes that we chose to train our AI: 
 
 ID | Biome
+--- | --- 
 0 | 'Ocean'
 24 | 'Deep Ocean'
 16 | 'Beach'
