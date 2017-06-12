@@ -46,15 +46,18 @@ Before classifying our biomes, we had to choose what biomes that we want our AI 
 
 Here is a table on all the possible biomes with their respective ID's that can possibly be used in our program:
 
-ID | Biome
---- | ---
-0 | Ocean
-1 | Plains
-129 | Sunflower Plains
-2 | Desert
-130 | Desert M
-3 | 'Extreme Hills'
-131 | 'Extreme Hills M'
+| ID | Biome |
+| --- | ---------------------------- |
+| 0 | Ocean |
+| 1 | Plains |
+| 129 | Sunflower Plains |
+| 2 | Desert  |
+| 130 | Desert M |
+
+
+3 | Extreme Hills |
+131 | Extreme Hills M |
+131 | Extreme Hills M |
 4 | 'Forest'
 132 | 'Flower Forest'
 5 | 'Taiga'

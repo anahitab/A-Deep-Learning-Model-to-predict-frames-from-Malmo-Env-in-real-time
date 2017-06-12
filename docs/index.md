@@ -3,7 +3,7 @@ layout: default
 title:  Home
 ---
 
-##Biome-Predictor: 
+## Biome-Predictor: 
 ## A Deep Learning Approach to Real Time Frame Prediction in RL Environment
 
 In Minecraft, there are over 30 different types of biomes that can spawn within any map. These range from common ones, such as grass plains and forests, to uncommon or rare ones, such as mesa and mushroom forests. 
