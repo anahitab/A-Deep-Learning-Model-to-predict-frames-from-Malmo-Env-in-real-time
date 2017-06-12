@@ -83,6 +83,11 @@ Out of all of these biomes, these are the following biomes, with their respectiv
 We selected these biomes because they are the most common biomes that we will see in the Overworld, which will be the primary location for testing. 
 We take the ID's of each of these biomes and stored them into a list called `biomeIdList` in order to convert between our prediction classes and Mincraft biome ID's
 
+### Class Distribution
+
+This is our experimental class distribution.
+
+![Class Distribution](img/class_distribution.png)
 
 We used a Deep Learning approach for the classification of the biomes from the Malmo environment. Deep learning does the excellent work of feature extraction from any Object/Image or even the text.
 There are many types of Neural Networks, but using a Convolutional Neural Network is so natural as they can be applied to whole image at a time. This means that they are good at extracting features at once.
