@@ -15,7 +15,7 @@ With the use of Malmo, we can predict what biome we are in real time while contr
 ![Biomes pic](http://minecraftsix.com/wp-content/uploads/2014/10/biomes-o-plenty-4.jpg)
 
 
-### Source Code for project: <https://github.com/anahitab/PROJECT>
+### Source Code for project: <https://github.com/anahitab/Biome-Predictor>
 
 
 
