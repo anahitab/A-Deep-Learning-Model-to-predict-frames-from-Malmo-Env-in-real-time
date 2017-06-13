@@ -107,18 +107,17 @@ The first layer has filter of shape 3X3 and the number of filters were 32. We al
 
 ## Evaluation  
 
-
-
 We tested our model on the test dataset. Our model has a pretty good accuracy and it is around 94%. Following is the sample output with True label and predicted label.
-
 
 ![Graph 1](https://raw.githubusercontent.com/anahitab/Biome-Predictor/master/docs/img/fig_2-1.png)
 
-
 Confusion matrix to describe the performance of our classification model on the test data. 
 
-
 ![Graph 2](https://raw.githubusercontent.com/anahitab/Biome-Predictor/master/docs/img/figure_2-1.png)
+
+We tried to evaluate the model trained on our new, larger data set, but the new model did not work correctly.
+It always predicted Ocean biome.
+The results here are for the original model.
 
 ## References
 
